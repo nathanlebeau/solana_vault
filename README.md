@@ -1,4 +1,4 @@
-# simple_solana_vault
+# solana_vault
 Interacting with simple vault program built with Anchor on Solana devnet
 
 # key Features
