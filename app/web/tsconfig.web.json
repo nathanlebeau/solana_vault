@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ES2022",
+    "lib": ["es2015", "dom"],
+    "moduleResolution": "bundler",
+    "strict": false
+  },
+  "include": ["vault.ts"]
+}
