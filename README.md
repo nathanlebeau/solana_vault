@@ -1,5 +1,5 @@
 # solana_vault
-Interacting with simple vault program built with Anchor on Solana devnet
+Interacting with simple program built with Anchor on Solana devnet
 
 # key Features
 - Anchor framework used (anchor init)
@@ -8,5 +8,7 @@ Interacting with simple vault program built with Anchor on Solana devnet
 
 - Launch a test client: ANCHOR_WALLET="path_to_your_solana_key" ANCHOR_PROVIDER_URL="https://api.
 devnet.solana.com" npx ts-node app/clients/deposit.ts
+
+- features: deposit / withdraw from vault (PDA address for vault), send SOL to random key (CPI)
 
 - web interface incoming

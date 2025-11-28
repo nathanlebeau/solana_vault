@@ -9,9 +9,9 @@ const program = anchor.workspace.solanaVault as Program<SolanaVault>;
 
 // withdraw from vault
 const tx = program.methods
-    .withdraw(new anchor.BN(20))
+    .withdraw(new anchor.BN(98561))
     .accounts({
       signer: anchor.getProvider().wallet.publicKey,
     })
     .rpc();
-console.log(`✅ Transaction de withdraw réussie: ${tx}`);
+console.log(`✅ Withdraw success: ${tx}`);

@@ -9,17 +9,11 @@ anchor.setProvider(anchor.AnchorProvider.env());
 
 const program = anchor.workspace.solanaVault as Program<SolanaVault>;
 
-// // Calculate PDA (useless)
-// let [vault_acc] = anchor.web3.PublicKey.findProgramAddressSync(
-//   [Buffer.from("vault")],
-//   program.programId
-// );
-
 // init vault
 const tx = program.methods
-  .initialize()
+  .initializeVault()
   .accounts({
-    payer: anchor.getProvider().wallet.publicKey,
+    signer: anchor.getProvider().wallet.publicKey,
   })
   .rpc();
-console.log(`✅ Transaction d'init réussie: ${tx}`);
+console.log(`✅ Init success: ${tx}`);
